@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CSS.css">
+	<title>Birthday Girl</title>
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="fireworks.js"></script> -->
+</head>
+<body>
+		<div style="margin-bottom: 90px;" class="para1">
+			<div style="text-align: center;">Mah Birthday Girl<a href="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a4d19890287115.5e139f5047d55.gif">❤️</a></div>
+			<!-- <div style="float: left; padding-left: 650px;">Love U Alot</div>
+			<div style="float: left; padding-left: 50px;">21th Birthday</div>
+			<div style="float: left; padding-left: 50px;"> Gift🎁
+				<a href=""></a>
+			</div> -->
+		</div>
+
+		<div class="m"><img class="imagec" src="imagec.gif" title="B'Day" alt="bday.jpg" width="500" height="300"></div>
+
+		<div id="same2">
+			 <div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 5</div>
+			  <!-- <img src="1.jpg" style="height:280px; padding-left: 50px"> -->
+			  <div class="text">Here we start With Bday girl</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 5</div>
+			  <!-- <img src="2.jpg" style="height:280px; padding-left: 50px"> -->
+			  <div class="text">Isn't she beautiful? hell yeah! <br>she is but i never saw her</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 5</div>
+			  <!-- <img src="3.jpg" style="height:280px; padding-left: 50px"> -->
+			  <div class="text">Sometimes she's crazy but she's hardworking girl.</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">4 / 5</div>
+			  <!-- <img src="4.jpg" style="height:280px; padding-left: 50px"> -->
+			  <div class="text">See now, she has a beautiful smile on her face<br> and i love her smile.</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">5 / 5</div>
+			  <!-- <img src="5.jpg" style="height:280px; padding-left: 50px"> -->
+			  <div class="text">I wish i was there with her to celebrate her bithday,<br> but no worries one day we'll do.<br>Happiest birthday to a beaitiful girl, love u lots❤️.</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		</div>
+		<div style="margin-top: 400px;">
+			<p>Birthday Song for you</p>
+			<audio controls="audiocontrols">
+			  <source src="birthday.mp3"/>
+			</audio>
+		</div>
+
+			<p id="copyright"><b><b> This website is for Bday Girl only. Copyright, all rights reserverd. </b></b> </p>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
